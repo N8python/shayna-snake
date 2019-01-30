@@ -177,11 +177,11 @@
 			var apple = new Apple()
 			// Pass an animation function to setInterval
 			var intervalId = setInterval(function(){
-        if(score === 7){
-          alert("Great job Shayna! - You unlocked your birthday gram!");
-          window.location = "https://n8python.github.io/shayna-gram/"
-          clearInterval(intervalId);
-        }
+        			if(score === 5){
+          				alert("Great job Shayna! - You unlocked your birthday gram!");
+          				window.location = "https://n8python.github.io/shayna-gram/"
+          				clearInterval(intervalId);
+        			}
 				ctx.clearRect(0, 0, width, height)
 				drawScore()
 				snake.move()
